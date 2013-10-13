@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/app.css" rel="stylesheet" />
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+    <script src="libs/rsvp.min.js"></script>
+    <script src="libs/sha1.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="ajaxClient/httpRequester.js"></script>
+    <script src="view-model/login.js"></script>
+    <script src="view-model/events.js"></script>
+    <script src="view-model/register.js"></script>
+    <script src="view-model/my-location.js"></script>
+    <script src="view-model/friends-location.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPkZ4JtIprzApAu6MDA0lgulEcqfhLNP0&sensor=true"></script>
+    <script src="google-manager/map.js"></script>
+
+    <style scoped>
+        .km-list, .km-listview {
+            background-color: palevioletred;
+            border:none;
+        }
+
+        #login-view .km-content {
+            background-color: palevioletred;
+        }
+
+        #register-view .km-content {
+            background-color: palevioletred;
+        }
+        #events-view .km-content {
+             background-color: palevioletred;
+        }
+        a.tabstr-item.km-button.km-state-active {
+            background-color:rgb(127, 163, 192);
+        }
+    </style>
+
+</head>
+<body>
+    <!--login view-->
+    <div data-role="view" id="login-view" data-layout="login-layout" data-show="app.login.init">
+        <div class="input-login-holder">
+            <div class="test" id="register-login-username-holder">
+                <input id="input-login-username" placeholder="Username" data-bind="value: username" />
+            </div>
+            <div class="test" id="register-login-password-holder">
+                <input id="input-login-password" placeholder="Password" data-bind="value: password" />
+            </div>
+        </div>
+        <span class="button-holder">
+            <button data-role="button" class="sign-in-button" data-bind="events: { click: signUp }">Sign in</button>
+        </span>
+    </div>
+
+
+    <!--login layout-->
+    <div data-role="layout" id="login-layout" data-id="login-layout">
+        <div data-role="header">
+            <div class="nav" data-role="navbar">
+                <a id="back-button" data-bind="events: { click: goToRegister }">
+                    <img id="back-icon" width="30" height="30" src="styles/appImages/Left_Circular.png" />
+                    Go to register
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--register layout-->
+    <div data-role="layout" id="register-layout" data-id="register-layout">
+        <div data-role="header">
+            <div class="nav" data-role="navbar">
+                <a id="forward-button" data-bind="events: { click: goToSignIn }">Go to Sign in
+                     <img id="forward-icon" width="35" height="35" src="styles/appImages/Right_Circular.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--latest events laouyt-->
+    <div data-role="layout" id="events-layout" data-id="events-layout">
+        <div data-role="header">
+            <div class="nav" data-role="navbar">
+                <a id="sign-out-button" data-bind="events: { click: signOut }">
+                    <img id="sign-out-icon" width="30" height="30" src="styles/appImages/Response.png" />
+                    Sign out
+                </a>
+            </div>
+        </div>
+        <div data-role="footer">
+            <div class="tabstr" data-role="tabstrip">
+                <a class="tabstr-item" href="view/events.html">Events
+                    <img width="40" height="40" src="styles/appImages/Deciduous_Tree.png"/>
+                </a>
+                <a class="tabstr-item" href="view/my-location.html">
+                    <img width="40" height="40" src="styles/appImages/Happy.png"/>
+                    My Location</a>
+                <a class="tabstr-item" href="view/friends-location.html">
+                    <img width="40" height="40" src="styles/appImages/Globe-World.png"/>
+                    My Friends</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

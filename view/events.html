@@ -1,0 +1,25 @@
+﻿<!--evetns view-->
+<div data-role="view" data-id="events-view" id="events-view" data-layout="events-layout" data-show="app.event.init">
+        <ul data-role="listview"
+            id="events-listview"
+            data-bind="source: latestEvents"
+            data-text-field="FirstName"
+            data-template="event-template">
+        </ul>
+</div>
+
+<script id="event-template" type="text/x-kendo-template">
+    <div class="event-holder">
+    <div class="event-header">
+        <span id="event-day-holder">#:data.Location.Day#</span>
+        <span id="event-year-month-holder">
+            <span class="event-date-item">#:data.Location.Month#</span>
+            <span class="event-date-item">#:data.Location.Year#</span>
+        </span>
+    <span id="event-time-holder">#:data.Location.Time#</span>
+    </div>
+    <h3>#:data.FirstName# #:data.LastName#</h3>
+    <div>#:data.Location.Description#</div>
+    </div>
+    
+</script>

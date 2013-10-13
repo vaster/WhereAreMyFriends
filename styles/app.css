@@ -1,0 +1,173 @@
+﻿div, button, a {
+    color: black!important;
+}
+
+
+.input-login-holder {
+    padding-top: 80px;
+}
+
+#input-login-username, #input-login-password {
+    width: 220px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.sign-in-button, .sign-up-button {
+    width: 160px;
+    height: 35px;
+    font-size: 18px;
+    background-color: white!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+}
+
+.sign-in-button {
+    margin-top: 330px;
+    margin-left: 10px;
+}
+
+.sign-up-button {
+    margin-left: 75px;
+    margin-top: 330px;
+    margin-left: 10px;
+}
+
+#back-icon {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#sign-out-icon {
+    margin-top: 5px;
+    margin-left: 25px;
+    float: left;
+}
+#sign-out-button {
+    margin-left: -160px;
+}
+
+#forward-icon {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+}
+
+#back-button {
+    margin-left: -140px;
+}
+
+#forward-button {
+    margin-left: 140px;
+}
+
+#register-form-holder {
+}
+
+.register-input {
+    display: block;
+    width: 220px;
+    height: 40px;
+    margin: 5px;
+    margin-left: 45px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.event-holder {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: white;
+}
+
+.event-header {
+    border-bottom: 1px solid black;
+}
+
+#event-year-month-holder {
+    display: inline;
+}
+
+#event-time-holder {
+    float: right;
+}
+
+#event-day-holder {
+    font-size: 20px;
+}
+
+.event-date-item {
+}
+
+.nav {
+    background-color: white!important;
+}
+
+.tabstr {
+    background-color: white!important;
+}
+
+#events-layout {
+    margin: 5px;
+}
+
+
+#register-login-password-holder {
+    top: 180px;
+}
+
+
+.button-holder {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    width: 180px;
+    height: 400px;
+    background: rgba(54, 25, 25, .5);
+    z-index: 0;
+}
+
+.test {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    background: rgb(127, 163, 192);
+    margin-bottom: 12px;
+    position: absolute;
+    z-index: 10;
+}
+
+#register-fname-holder {
+    top:10px;
+}
+
+
+#register-lname-holder {
+    top:60px;
+}
+
+#register-phone-holder {
+    top:110px;
+}
+
+#register-nname-holder {
+    top:160px;
+}
+
+#register-pass-holder {
+    top:210px;
+}
+
+#register-rpass-holder {
+    top:260px;
+}
+
+.tabstr-item {
+    font-size:13px!important;
+    text-decoration:none!important;
+    font-weight:normal!important;
+}

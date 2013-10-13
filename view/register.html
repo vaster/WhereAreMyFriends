@@ -1,0 +1,32 @@
+﻿<!--register view-->
+<div data-role="view" data-layout="register-layout" data-id="register-view" id="register-view" data-show="app.register.init">
+    <div id="register-form-holder">
+
+        <div id="register-fname-holder" class="test">
+            <input class="register-input" placeholder="First Name" data-bind="value: firstName" />
+        </div>
+
+        <div id="register-lname-holder" class="test">
+            <input class="register-input" placeholder="Last Name" data-bind="value: lastName" />
+        </div>
+
+        <div id="register-phone-holder" class="test">
+            <input class="register-input" placeholder="Phone Number" data-bind="value: phoneNumber" />
+        </div>
+
+        <div id="register-nname-holder" class="test">
+            <input class="register-input" placeholder="Nickname" data-bind="value: username" />
+        </div>
+
+        <div id="register-pass-holder" class="test">
+            <input class="register-input" placeholder="Password" data-bind="value: password" />
+        </div>
+
+        <div id="register-rpass-holder" class="test">
+            <input class="register-input" placeholder="Repeat Password" data-bind="value: repeatPassword" />
+        </div>
+    </div>
+    <span class="button-holder">
+        <button data-role="button" class="sign-up-button" data-bind="events: { click: register }">Sign up</button>
+    </span>
+</div>

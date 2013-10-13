@@ -1,0 +1,9 @@
+﻿<!--my location view-->
+<div data-role="view" data-id="my-location-view" id="my-location-view" data-layout="events-layout" data-show="app.myLocation.init">
+    <div style="height: 250px">
+        <div style="height: 100%" id="map-canvasMyLoc"></div>
+    </div>
+    <textarea rows="4" cols="30" style="float: left;" placeholder="Text to share goes here" data-bind="value:description"></textarea>
+    <button style="float: left" data-bind="events{click:shareLocation}">Share</button>
+</div>
+
